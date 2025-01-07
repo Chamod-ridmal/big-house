@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opportunities and Services - Big House</title>
+    <link rel="icon" href="img/title.jpg" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="common.css" rel="stylesheet">
+    <link href="navi.css">
+    <link href="Architecture.css" rel="stylesheet">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #c6d7e7;
+            --accent: #e67e22;
+            --dark: #1a252f;
+            --text-dark: #2c3e50;
+            --text-light: #95a5a6;
+            --dark-brown: #2c3e50;
+        }
+
+        .hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                        url('img/4236127.jpg') center/cover;
+            margin-top: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            height: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .why-choose-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .why-choose-card:hover {
+            transform: translateY(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+
+            .service-card {
+                margin-bottom: 2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero {
+                height: 50vh;
+            }
+
+            .service-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar (same as template) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="img/logoTrans(1).png" alt="Big House Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Opportunities & Services</h1>
+            <p>Connecting people with resources for growth and success</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services py-5" id="services">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <i class="fas fa-search"></i>
+                        <h3>Looking for a Job?</h3>
+                        <p>Find opportunities aligned with your skills, qualifications, and career goals. Our platform connects job seekers with their ideal positions.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Need Workers?</h3>
+                        <p>Connect with qualified candidates for your business needs. We help match employers with skilled workers for various tasks and projects.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Machinery</h3>
+                        <p>Access the equipment you need for any job. We provide tools and machinery for both personal and commercial use.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <i class="fas fa-store"></i>
+                        <h3>Sell Your Products</h3>
+                        <p>Showcase and sell your products effectively. Perfect for small businesses and homemade products.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Join as an Expert</h3>
+                        <p>Share your expertise and collaborate with us. Be part of our team delivering exceptional services to clients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--social side fix bar-->
+     <div class="social-sidebar">
+        <div class="social-side-fix">
+            <a href="#" class="side-fix-facebook">Facebook</a>
+            <a href="#" class="side-fix-youtube">YouTube</a>
+            <a href="#" class="side-fix-tiktok">TikTok</a>
+            <div class="rotate-text">Follow us.</div>
+        </div>
+    </div>
+     <!--whatsapp  slide bottom  -->
+     <div class="whatsapp-slide">
+        <a href="https://wa.me/+940778988628"><img src="img/icon/whatsappl.png" width="50px" height="50px" ></a>
+    </div> 
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose Big House?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="why-choose-card">
+                        <h3><i class="fas fa-certificate me-2"></i>Expertise You Can Trust</h3>
+                        <p>Our experienced professionals excel in their fields, ensuring top-notch solutions tailored to your needs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="why-choose-card">
+                        <h3><i class="fas fa-list-alt me-2"></i>Comprehensive Services</h3>
+                        <p>From tools and machinery to employment opportunities, we provide a one-stop platform for all your needs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="why-choose-card">
+                        <h3><i class="fas fa-hands-helping me-2"></i>Reliable Support</h3>
+                        <p>Our dedicated team guides you through every step, whether you're buying, selling, hiring, or seeking employment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+     <footer style="background-color: #17252A" class="text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <img src="img/logoTrans(1).png" alt="Big House Logo" class="mb-3" height="48">
+                    <p class="text-white">Providing comprehensive professional solutions since 2024.</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="h5 mb-3">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="#portfolio" class="text-white text-decoration-none">Portfolio</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                     <h3 class="h5 mb-3">Services</h3> 
+                     <ul class="list-unstyled"> 
+                        <li class="mb-2"><a href="Architectural.html">Architectural Services</a></li>
+                        <li class="mb-2"><a href="Creative.html">Creative Services</a></li>
+                        <li class="mb-2"><a href="Printing.html">Printing Services</a></li>
+                        <li><a href="Art.html">Art & Collectibles</a></li>
+                        <li><a href="proparty.html">Vehicle Management Services</a></li>
+                        <li><a href="construction.html">Construction & Technical Services</a></li>
+                        <li><a href="itsolution.html">IT Solutions</a></li>
+                        <li><a href="Opportunities.html">Opportunities and Services</a></li> 
+                    </ul> 
+                </div>
+                <div class="col-md-3">
+                    <h3 class="h5 mb-3">Contact</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="mailto:www.bighouse@gmail.com">www.bighouse@gmail.com</a></li>
+                        <li class="mb-2">0778988628<br>0714632672</li>
+                        <li class="mb-2">No. 13/12, Jayapathirana Mawatha,<br>
+                        Bauddhaloka Road,<br>Kurunagala.</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-4 border-top border-light">
+                <p class="mb-0">&copy; 2024 Big House. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.service-card, .why-choose-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
